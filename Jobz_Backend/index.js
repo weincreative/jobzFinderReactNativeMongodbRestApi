@@ -21,7 +21,7 @@ app.use(cors({ origin: true, credentials: true }));
 async function connect() {
   try {
     await mongoose.connect(
-      `mongodb+srv://admin:8VdayxvWBeeA4A6O@cluster0.jfrmol2.mongodb.net/JobzDe?retryWrites=true&w=majority`
+      `mongodb+srv://admin:<PASSWORD>@cluster0.jfrmol2.mongodb.net/<DATABASE ADDRESS>?retryWrites=true&w=majority`
     );
     console.log("Connected to MongoDB DataBase");
   } catch (error) {
